@@ -17,10 +17,14 @@
 package com.uber.rib;
 
 import android.app.Application;
+import android.util.Log;
 
 public class SampleApplication extends Application {
+    private static final String TAG = "SampleApplication";
+
     @Override
     public void onCreate() {
+        Log.d(TAG, "onCreate: app created");
         super.onCreate();
     }
 }
